@@ -1,0 +1,30 @@
+.colorBar {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .colorBar img {
+    width: 60px;
+    cursor: pointer;
+  }
+  
+  .colors {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 0;
+    transition: 300ms;
+  }
+  
+  .colors_active {
+    height: 300px;
+  }
+  
+  .color {
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    list-style: none;
+  }
