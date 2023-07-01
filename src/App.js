@@ -57,6 +57,7 @@ function App() {
         updateText={updateText}
         mode={mode}
         handleMode={setMode}
+        setNotes={setNotes}
       />
     </div>
   );

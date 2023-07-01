@@ -13,11 +13,15 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center;
+    align-items: flex-start;
     height: 0;
     transition: 300ms;
   }
   
+.colorBar  ul {
+    padding-left: 1rem;
+}
+
   .colors_active {
     height: 300px;
   }
