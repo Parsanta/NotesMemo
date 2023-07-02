@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Parsanta/ToDoMemo/static/css/main.10b8fd46.css",
+    "main.js": "/Parsanta/ToDoMemo/static/js/main.1df875fb.js",
+    "static/media/add1.png": "/Parsanta/ToDoMemo/static/media/add1.964626e27f8c5b8cd646.png",
+    "static/media/moon.png": "/Parsanta/ToDoMemo/static/media/moon.231a786d3ec953ce1515.png",
+    "static/media/add.png": "/Parsanta/ToDoMemo/static/media/add.769f2e564f6d9c24a1fb.png",
+    "static/media/unpin.png": "/Parsanta/ToDoMemo/static/media/unpin.f827609ef030d7a870fa.png",
+    "index.html": "/Parsanta/ToDoMemo/index.html",
+    "main.10b8fd46.css.map": "/Parsanta/ToDoMemo/static/css/main.10b8fd46.css.map",
+    "main.1df875fb.js.map": "/Parsanta/ToDoMemo/static/js/main.1df875fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10b8fd46.css",
+    "static/js/main.1df875fb.js"
+  ]
+}
