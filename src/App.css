@@ -1,8 +1,8 @@
 .App {
   height: 100vh;
   display: flex;
-  gap: 20px;
-  padding: 40px;
+  gap: 5px;
+  padding: 30px;
 }
 body.dark-mode {
   background-color: rgb(20, 20, 20);
