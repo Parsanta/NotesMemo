@@ -15,7 +15,7 @@ export const NoteContainer = (props) => {
   };
 
   const notes = reverArray(props.notes);
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
 
   const togglePin = (id) => {
     const updatedNotes = notes.map((note) => {
@@ -34,10 +34,12 @@ export const NoteContainer = (props) => {
 
   return (
     <div className="noteContainer">
-      <h1>ToDoMemo</h1>
+      <h1>NotesMemo</h1>
       <Button
         variant={props.mode ? "light" : "outline-dark"}
-        onClick={() => props.handleMode((previousDarkMode) => !previousDarkMode)}
+        onClick={() =>
+          props.handleMode((previousDarkMode) => !previousDarkMode)
+        }
       >
         <img src={moon} style={{ height: "30px" }} alt="moon" />
       </Button>
@@ -55,8 +57,10 @@ export const NoteContainer = (props) => {
               note={item}
               deleteNote={props.deleteNote}
               updateText={props.updateText}
+              updateTitle={props.updateTitle}
               mode={props.mode}
               pinNote={togglePin}
+              title={props.title}
             />
           ))
         ) : (

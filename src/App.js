@@ -5,7 +5,10 @@ import { ColorBar } from "./Components/sideColorBar/colorBar";
 
 function App() {
   const storedNotes = JSON.parse(localStorage.getItem("notes-app")) || [];
-  const [notes, setNotes] = useState(storedNotes);
+  const [notes, setNotes] = useState(storedNotes.map(note => ({
+    ...note,
+    title: ""
+  })));
 
   useEffect(() => {
     localStorage.setItem("notes-app", JSON.stringify(notes));
@@ -24,6 +27,7 @@ function App() {
         time: formattedDate + " " + formattedTime,
         color,
         pinned: false,
+        title: "",
       },
     ];
     setNotes(tempNotes);
@@ -42,6 +46,14 @@ function App() {
     setNotes(tempNotes);
   };
 
+  const updateTitle = (title, id) => {
+    const tempNotes = [...notes];
+    const index = tempNotes.findIndex((item) => item.id === id);
+    if (index < 0) return;
+    tempNotes[index].title = title;
+    setNotes(tempNotes);
+  };
+
   const [mode, setMode] = useState(false);
 
   useEffect(() => {
@@ -50,11 +62,12 @@ function App() {
 
   return (
     <div className={`App ${mode ? "dark-mode" : ""}`}>
-      <ColorBar addNote={addNote} mode={mode}/>
+      <ColorBar addNote={addNote} mode={mode} />
       <NoteContainer
         notes={notes}
         deleteNote={deleteNote}
         updateText={updateText}
+        updateTitle={updateTitle}
         mode={mode}
         handleMode={setMode}
         setNotes={setNotes}

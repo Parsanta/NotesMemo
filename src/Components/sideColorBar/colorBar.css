@@ -1,34 +1,41 @@
 .colorBar {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  
-  .colorBar img {
-    width: 60px;
-    cursor: pointer;
-  }
-  
-  .colors {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-    height: 0;
-    transition: 300ms;
-  }
-  
-.colorBar  ul {
-    padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-  .colors_active {
-    height: 300px;
-  }
-  
-  .color {
-    border-radius: 50%;
-    height: 24px;
-    width: 24px;
-    list-style: none;
-  }
+.colorBar img {
+  width: 60px;
+  cursor: pointer;
+}
+
+.colors {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  height: 0;
+  transition: height 300ms;
+}
+
+.colorBar ul {
+  padding-left: 1rem;
+}
+
+.colors_active {
+  height: 300px;
+}
+
+.color {
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  list-style: none;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 300ms;
+}
+
+.color:hover {
+  background-color: #999;
+}

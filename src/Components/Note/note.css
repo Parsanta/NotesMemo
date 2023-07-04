@@ -1,38 +1,54 @@
-.noteArea {
-  padding: 20px;
-  max-height: 200px;
-  width: 260px;
+.noteAreaContainer {
   display: flex;
-  flex-direction: column;
-  background-color: #F7F7F7; 
-  border-radius: 10px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
-  font-family: Arial, sans-serif; 
-  color: #ffffff; 
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
-.noteText {
-  flex: 1;
-  resize: none;
-  background-color: transparent;
-  font-size: 14px;
-  line-height: 1.5;
-  outline: none;
-  border: none;
-  color: #ffffff;
+.noteArea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .noteArea.dark-mode {
-  filter: brightness(90%);
+  background-color: #333333;
+}
+
+.noteTextWrapper {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.noteText {
+  height: 100%;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow-y: auto;
 }
 
 .noteArea.dark-mode .noteText {
   color: #000000;
 }
 
-
-
 .noteDelete {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,14 +57,50 @@
 .noteDelete img {
   cursor: pointer;
   opacity: 0;
-  transition: 300ms;
+  transition: opacity 300ms ease-in-out;
   height: 20px;
 }
 
-.noteDelete p{
+.noteDelete p {
   margin-bottom: 0;
 }
 
 .noteArea:hover .noteDelete img {
   opacity: 1;
 }
+
+.noteHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.noteHeader .noteTitle{
+  width:max-content;
+}
+
+.noteHeader .noteTitle::placeholder {
+  color: #000000;
+}
+
+.listButton {
+  border: none;
+  background-color: transparent;
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.noteTitle {
+  height: 100%;
+  font-size: 25px;
+  font-weight:normal;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+
