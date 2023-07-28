@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ToDoMemo/static/css/main.0194d3f5.css",
-    "main.js": "/ToDoMemo/static/js/main.5954122c.js",
-    "static/media/add1.png": "/ToDoMemo/static/media/add1.964626e27f8c5b8cd646.png",
-    "static/media/moon.png": "/ToDoMemo/static/media/moon.231a786d3ec953ce1515.png",
-    "static/media/note.png": "/ToDoMemo/static/media/note.cdcada3c1c5a4b75ed05.png",
-    "static/media/add.png": "/ToDoMemo/static/media/add.769f2e564f6d9c24a1fb.png",
-    "static/media/unpin.png": "/ToDoMemo/static/media/unpin.f827609ef030d7a870fa.png",
-    "index.html": "/ToDoMemo/index.html",
-    "main.0194d3f5.css.map": "/ToDoMemo/static/css/main.0194d3f5.css.map",
-    "main.5954122c.js.map": "/ToDoMemo/static/js/main.5954122c.js.map"
+    "main.css": "/NotesMemo/static/css/main.0194d3f5.css",
+    "main.js": "/NotesMemo/static/js/main.992df325.js",
+    "static/media/add1.png": "/NotesMemo/static/media/add1.964626e27f8c5b8cd646.png",
+    "static/media/moon.png": "/NotesMemo/static/media/moon.231a786d3ec953ce1515.png",
+    "static/media/note.png": "/NotesMemo/static/media/note.cdcada3c1c5a4b75ed05.png",
+    "static/media/add.png": "/NotesMemo/static/media/add.769f2e564f6d9c24a1fb.png",
+    "static/media/unpin.png": "/NotesMemo/static/media/unpin.f827609ef030d7a870fa.png",
+    "index.html": "/NotesMemo/index.html",
+    "main.0194d3f5.css.map": "/NotesMemo/static/css/main.0194d3f5.css.map",
+    "main.992df325.js.map": "/NotesMemo/static/js/main.992df325.js.map"
   },
   "entrypoints": [
     "static/css/main.0194d3f5.css",
-    "static/js/main.5954122c.js"
+    "static/js/main.992df325.js"
   ]
 }
